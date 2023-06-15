@@ -1,0 +1,68 @@
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+
+
+    &__content{
+        position: fixed;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+
+        &-close{
+            width: 2rem;
+            position: fixed;
+            right: 1.5rem;
+        }
+
+        &-items{
+            list-style: none;
+            margin-top: 4rem;
+            padding: 0 !important;
+        }
+
+        &-item{
+            margin-bottom: 1rem;
+            cursor: pointer;
+
+            &-dropdown{
+                list-style: none;
+                margin-top: 1rem;
+
+                li{
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+
+                    img{
+                        margin-right: 0.4rem;
+                    }
+                }
+            }
+        }
+
+        &-button-login{
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            border: none;
+            background-color: white;
+            outline: none;
+            cursor: pointer;
+            padding: 0.5rem 0;
+        }
+
+        &-button-register{
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid hsl(0, 0%, 8%);
+            cursor: pointer;
+            padding: 0.5rem 0;
+        }
+    }
+}

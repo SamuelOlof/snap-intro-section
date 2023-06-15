@@ -1,0 +1,58 @@
+<nav class="navmenu">
+    <img src="./assets/images/logo.svg" alt="logo">
+
+    <img (click)="showMenu()" src="../../../assets/images/icon-menu.svg" alt="icon-menu">
+
+    <div *ngIf="menuOpen" class="navmenu__content">
+        <img (click)="showMenu()" class="navmenu__content-close" src="./assets/images/icon-close-menu.svg" alt="icon-close-menu">
+
+        <ul class="navmenu__content-items">
+            <li class="navmenu__content-item" (click)="openFeatures()">
+                Features
+
+                <img src="../../../assets/images/icon-arrow-{{featuresIconShown}}.svg" alt="icon-arrow-down">
+
+                <ul *ngIf="featuresActive" class="navmenu__content-item-dropdown">
+                    <li>
+                        <img src="../../../assets/images/icon-todo.svg" alt="icon-todo">
+
+                        Todo List
+                    </li>
+                    <li>
+                        <img src="../../../assets/images/icon-calendar.svg" alt="icon-calender">
+
+                        Calender
+                    </li>
+                    <li>
+                        <img src="../../../assets/images/icon-reminders.svg" alt="icon-reminder">
+
+                        Reminders
+                    </li>
+                    <li>
+                        <img src="../../../assets/images/icon-planning.svg" alt="icon-planning">
+
+                        Planning
+                    </li>
+                </ul>
+            </li>
+            <li class="navmenu__content-item" (click)="openCompany()">
+                Company
+
+                <img src="../../../assets/images/icon-arrow-{{companyIconShown}}.svg" alt="icon-arrow-down">
+
+                <ul *ngIf="companyActive" class="navmenu__content-item-dropdown">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                </ul>
+            </li>
+            <li class="navmenu__content-item">Careers</li>
+            <li class="navmenu__content-item">About</li>
+        </ul>
+
+        <div class="navmenu__content-buttons">
+            <button class="navmenu__content-button-login">Login</button>
+            <button class="navmenu__content-button-register">Register</button>
+        </div>
+    </div>
+</nav>
