@@ -47,6 +47,16 @@
     }
 }
 
+@media screen and (min-width:768px) {
+    .screen{
+        font-size: 24px;
+
+        button{
+            font-size: 18px;
+        }
+    }
+}
+
 @media screen and (min-width:1024px) {
     .screen{
         &__container{
@@ -58,11 +68,9 @@
 
         &__content{
             width: 80vw;
-            // margin:  2rem 3rem 3rem 3rem;
             display: flex;
             flex-direction: row-reverse;
             align-items:end;
-            // align-items: center;
             justify-content: space-between;
         }
 
@@ -98,7 +106,6 @@
         }
         
         &__logos{
-            // margin-top: 5rem;
             width: 35vw;
         }
     }
